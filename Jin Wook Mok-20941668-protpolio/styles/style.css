@@ -1,0 +1,615 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: rgb(112, 209, 112);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.Main-container {
+  width: 75vw;
+  margin: 1rem auto;
+  padding: 35px;
+  background-color: rgb(32, 32, 39);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.intro {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  color: white;
+}
+.intro .name {
+  width: 60%;
+  font-size: 3rem;
+  color: white;
+  margin: 1rem 0;
+} span {
+  color: rgb(112, 209, 112);
+  font-style: italic;
+  font-weight: bolder;
+}
+.intro p {
+  color: white;
+  font-size: 1.2rem;
+  opacity: 80%;
+  width: 60%;
+  margin: 1rem 0;
+}
+.intro .social-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 60%;
+}
+.intro .social-links .tags {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.intro .social-links .tags a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  border-radius: 100%;
+}
+.intro .social-links .tags a {
+  color: white;
+}
+.intro .social-links .tags a:hover {
+  background-color: white;
+  color: rgb(112, 209, 112);
+}
+.image-card {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: max-content;
+  padding: 30px;
+  background-color: rgb(32, 32, 39);
+}
+.sidebar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  border-radius: 100%;
+}
+.sidebar a:hover {
+  color: rgb(112, 209, 112);
+  background-color: white;
+}
+
+
+/* css for about page*/
+.about-container{
+  color: white;
+  width: 75vw;
+  margin: 2rem auto;
+  padding: 35px;
+  background-color: rgb(32, 32, 39);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+      
+}
+.heading{
+  text-transform:uppercase;
+  letter-spacing: 1.4px;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  border-bottom: 2px solid rgb(112, 209, 112);
+}
+.part1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.part1 .paraaboutme{
+  width: 60%;
+  height: 100%;
+  line-height: 25px;
+}
+.part1 .paraaboutme h1{
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+.part1 .paraaboutme p{
+  opacity: 60%;
+}
+.part1 .paraaboutme strong{
+  color: white;
+  background-color: rgb(136, 127, 255);
+  opacity: 100%;
+
+}
+.skill-cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  height: 210px;
+  width: 190px;
+  background-color: rgb(96, 99, 99);
+  margin: 1rem 1rem;
+  border: 1px solid rgb(112, 209, 112);;
+  border-radius: 2.5%;
+}
+.card .types{
+  padding: 12px;
+  color: aquamarine;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid black;
+}
+.card h3{
+  font-size: 2.3rem;
+  color: whitesmoke;
+  padding-right: 5px;
+  text-align: right;
+    
+}
+.part2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 220px;
+  margin-top: 2rem;
+}
+.part2 .cardaboutme{
+  background-color: black;
+  padding: 30px;
+  height: 250px;
+}
+.cardaboutme .headingofcard{
+  font-size: 2rem;
+  border-bottom: 1px solid rgb(112, 209, 112);
+  padding: 12px;
+  margin-bottom: 1rem;
+
+}
+.cardaboutme .description{
+  padding: 4px;
+}
+.cardaboutme .description p{
+  opacity: 80%;
+}
+.part3{
+  margin-top: 2rem;
+  height: max-content;
+  background-color: black;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.stat-title {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 3.5rem 0;
+  position: relative;
+}
+.stat-title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 40%;
+  height: 1px;
+}
+
+/*Timeline*/
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  padding-bottom: 3rem;
+  margin: 0 auto;
+}
+.timeline .timeline-item {
+  position: relative;
+  padding-left: 3rem;
+  border-left: 1px solid  lightslategrey;
+}
+.timeline .timeline-item .tl-icon {
+  position: absolute;
+  left: -27px;
+  top: 0;
+  background-color: green;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.timeline .timeline-item .tl-icon i {
+  font-size: 1.3rem;
+}
+.timeline .timeline-item .tl-duration {
+  padding: 0.2rem 0.6rem;
+  background-color: rgb(78, 77, 77);
+  border-radius: 15px;
+  display: inline-block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.timeline .timeline-item h5 {
+  padding: 1rem 0;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.timeline .timeline-item h5 span {
+  color: lightgray;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.timeline .timeline-item p {
+  color: lightgray;
+}
+
+
+
+
+/* Styling reflection page */
+.Main-containerreflection{
+  width: 80vw;
+  margin: 1rem auto;
+  padding: 35px;
+  background-color: rgb(32, 32, 39);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.Main-containerreflection .heading{
+  color: white;
+  width: 100%;
+}
+.cardsofreflection{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* height: 90vh; */
+}
+.cardref{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  /* height: 50%; */
+  margin: 1rem auto;
+
+}
+.cardref h2{
+  font-size: 2rem;
+  color:rgb(112, 209, 112);
+  border-bottom:1px solid white ;
+  margin:0 30px 0 0 ;
+
+}
+.cardref p{
+  color: white;
+  width: 80%;
+  text-align: justify;
+  margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 950px) {
+  .main {
+    flex-direction: column;
+  }
+  .sidebar {
+    flex-direction: row;
+    height: 100px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+  }
+  .Main-container,.about-container,.Main-containerreflection {
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    margin-top: 8rem;
+  }
+  .intro {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .intro .name {
+    font-size: 2rem;
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .intro p {
+    width: 60%;
+    margin: 1rem auto;
+  }
+  .intro .social-links {
+    width: 80%;
+    justify-content: space-around;
+    margin: 2rem auto;
+  }
+  .image-card {
+    height: 80%;
+    margin-bottom: 2rem;
+  }
+  .part1
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .part1 .paraaboutme{
+    width: 90%;
+    margin: 1rem auto;
+  }
+  .part2 .cardaboutme{
+    height: auto;
+    margin: 1rem 0;
+    overflow: auto;
+  }
+  .part2 .cardaboutme .headingofcard{
+    font-size: 1.4rem;
+  }
+  .part3{
+    width: 100%;
+  }
+  .timeline {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 6rem;
+  }
+  .timeline-item
+  {
+    padding: 0 0 0 20px;
+  }
+
+  .timeline .timeline-item .tl-icon {
+    left: -27px;
+    width: 35px;
+    height: 35px;
+  }
+  .timeline .timeline-item .tl-icon i {
+    font-size: 0.9rem;
+  }
+  .timeline .timeline-item .tl-duration {
+    padding: 0.2rem 0.6rem;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+  .sidebar {
+    flex-direction: row;
+    height: 100px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+  }
+  .body {
+    display: flex;
+    flex-direction: column;
+  }
+  .Main-container,.Main-containerreflection {
+    width: 70vw;
+    margin: 1rem auto;
+    margin-top: 8rem;
+  }
+  .intro .name {
+    font-size: 3rem;
+    width: 60%;
+    margin: 1rem auto;
+  }
+  .intro p {
+    font-size: 1.2rem;
+    width: 60%;
+  }
+  .image-card {
+    height: 50%;
+  }
+  .image-card img {
+    height: 70%;
+  }
+}
+@media (max-width: 650px) {
+  .main {
+    flex-direction: column;
+  }
+  .sidebar {
+    flex-direction: row;
+    width: 100vw;
+    height: 100px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+  }
+  .body {
+    display: flex;
+    flex-direction: column;
+  }
+  .Main-container,.Main-containerreflection {
+    margin: 0.4rem auto;
+
+    margin-top: 8rem;
+  }
+  .image-card {
+    height: 50%;
+  }
+  .image-card img {
+    width: 80%;
+    height: 70%;
+  }
+  .Main-containerreflection .heading{
+    color: white;
+    width: 90%;
+    font-size: 0.9rem;
+  }
+  .cardref{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 50%;
+    margin: 1rem auto;
+  
+  }
+  .cardref h2{
+    font-size: 1.5rem;
+  
+  }
+}
+
+@media (max-width: 540px) {
+  .main {
+    flex-direction: column;
+  }
+  .sidebar {
+    flex-direction: row;
+    height: 100px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+  }
+  .sidebar a {
+    height: 40px;
+    width: 40px;
+  }
+  .body {
+    display: flex;
+    flex-direction: column;
+  }
+  .Main-container,.Main-containerreflection {
+    width: 70vw;
+    margin: 0.2rem auto;
+
+    margin-top: 8rem;
+  }
+  .intro .name {
+    font-size: 1.5rem;
+    width: 80%;
+    margin: 0.5rem auto;
+  }
+  .intro p {
+    font-size: 0.7rem;
+    width: 50%;
+  }
+  .image-card {
+    height: 50%;
+  }
+  .intro .social-links .tags a {
+    height: 30px;
+    width: 30px;
+  }
+  .image-card img {
+    width: 80%;
+    height: 70%;
+  }
+  .about-container .heading{
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .part3{
+    width: 100%;
+  }
+  .timeline {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 6rem;
+  }
+  .timeline .timeline-item
+  {
+    padding: 0 0 0 20px;
+  }
+
+  .timeline .timeline-item .tl-icon {
+    left: -27px;
+    width: 35px;
+    height: 35px;
+  }
+  .timeline .timeline-item .tl-icon i {
+    font-size: 0.9rem;
+  }
+  .timeline .timeline-item .tl-duration {
+    padding: 0.2rem 0.6rem;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+  .timeline .timeline-item h5 {
+    padding: 1rem 0;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .timeline .timeline-item h5 span {
+    color: lightgray;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+  .timeline .timeline-item p {
+    color: lightgray;
+  }
+  .cardref h2{
+    text-align: center;
+  }
+  .cardref p{
+    text-align: center;
+  }
+}
